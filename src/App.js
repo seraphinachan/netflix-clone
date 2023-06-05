@@ -1,8 +1,6 @@
 import React from 'react';
-import './App.css';
-import HomeScreen from './Screens/HomeScreen';
+import {Landing, Login} from './pages';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginScreen from './Screens/LoginScreen';
 
 function App() {
   const user = null;
@@ -11,10 +9,10 @@ function App() {
     <div className="app">
       <Router>
         {!user ? (
-          <LoginScreen />
+          <Login />
         ) : (
           <Routes>
-            <Route path="/" element={<HomeScreen />} />
+            <Route path="/" element={<Landing />} />
           </Routes>
         )}
       </Router>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './LoginScreen.css'
+import './Login.css'
 
-function LoginScreen() {
+function Login() {
     const [signIn, setSignIn] = useState(false);
 
   return (
@@ -43,4 +43,4 @@ function LoginScreen() {
   )
 }
 
-export default LoginScreen
+export default Login
