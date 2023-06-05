@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
+<<<<<<< HEAD:src/Screens/LoginScreen.js
 import './LoginScreen.css'
 import SignupScreen from './SignupScreen'
+=======
+import './Login.css'
+>>>>>>> 279945981d2df53c724781b7a1ab16a7ea6b8657:src/pages/Login/Login.js
 
-function LoginScreen() {
+function Login() {
     const [signIn, setSignIn] = useState(false);
 
   return (
@@ -48,4 +52,4 @@ function LoginScreen() {
   );
 }
 
-export default LoginScreen
+export default Login
