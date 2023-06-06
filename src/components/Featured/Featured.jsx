@@ -1,10 +1,8 @@
 import React from 'react';
 import './Featured.css';
 import { truncate } from '@lib/helpers';
+
 function Featured() {
-
- 
-
   return (
     <header
       className="banner"
