@@ -1,7 +1,15 @@
 import React from 'react';
 import { NavBar, Input, Button } from '@components';
+import { useNavigate } from 'react-router-dom';
 
 function Landing() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    /* Todo : Harcode url doesn't seems good */
+    navigate('/signin');
+  };
+
   return (
     <div className="relative h-full w-full">
       <NavBar />
@@ -21,7 +29,7 @@ function Landing() {
             <Input type="email" id="email" label="Email address" />
           </div>
           <div className="flex-none shrink-0 w-[10rem] h-[56px]">
-            <Button> Get Started </Button>
+            <Button onClick={handleClick}> Get Started </Button>
           </div>
         </div>
       </div>

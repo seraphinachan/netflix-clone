@@ -1,11 +1,11 @@
 import React from 'react';
 import { Nav, Featured } from '@components';
+import { NavBar } from '../../components';
 
 function Landing() {
   return (
     <div>
-      <Nav />
-      <Featured />
+      <NavBar isLoggedIn={true} />
     </div>
   );
 }

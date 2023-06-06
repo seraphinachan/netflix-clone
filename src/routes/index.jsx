@@ -7,7 +7,7 @@ export default function AppRoute() {
     <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/signup" element={<SignIn />} />
+        <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignIn />} />
         <Route path="/home" element={<Home />} />
         <Route path="/episode" element={<Episode />} />

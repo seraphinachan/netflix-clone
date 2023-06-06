@@ -1,6 +1,5 @@
 import React from 'react';
-import './Modal.css';
-import ReactPortal from '../ReactPortal';
+import ReactPortal from '@components/ReactPortal';
 import PropTypes from 'prop-types';
 
 export default function Modal({ children, isOpen, handleClose }) {
