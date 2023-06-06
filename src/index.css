@@ -112,6 +112,11 @@
 
 html {
   font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  @apply h-full;
+}
+
+body {
+  @apply bg-zinc-900 h-full  overflow-x-hidden;
 }
 
 /* Used to center a div */

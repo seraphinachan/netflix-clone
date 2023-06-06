@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavBar } from '@components';
+import { NavBar, Input, Button } from '@components';
 
 function Landing() {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-full w-full">
       <NavBar />
       <div className="absolute-center">
         <h1 className="text-5xl	font-black">
@@ -16,17 +16,13 @@ function Landing() {
           Ready to watch? Enter your email to create create or restart your
           membership.
         </h3>
-        <div className="m-3 text-center">
-          <form>
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="m-3 outline-0 w-5/12 h-8 p-6 leading-6 text-slate-600"
-            />
-            <button className="py-3 px-5 text-base bg-red-700 border-0 cursor-pointer font-semibold">
-              Get Started
-            </button>
-          </form>
+        <div className="flex space-x-2 text-center justify-center mt-5">
+          <div className="flex-none shrink-0 w-[28rem]">
+            <Input type="email" id="email" label="Email address" />
+          </div>
+          <div className="flex-none shrink-0 w-[10rem] h-[56px]">
+            <Button> Get Started </Button>
+          </div>
         </div>
       </div>
     </div>

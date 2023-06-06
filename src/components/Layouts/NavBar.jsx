@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <>
       <div
-        className="bg-no-repeat bg-cover bg-center"
+        className="bg-no-repeat bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url(${landing})` }}
       >
         <img
