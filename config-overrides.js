@@ -7,6 +7,7 @@ module.exports = function override(config) {
     '@api': 'src/api',
     '@lib': 'src/lib',
     '@assets': 'src/assets',
+    '@data': 'src/data',
   })(config);
 
   return config;

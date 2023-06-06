@@ -1,12 +1,20 @@
-import React from 'react';
-import { TitleCardList } from './components/Card/Title/TitleCard';
-import Modal from './components/Modal/Modal';
-import FakeEpisodeList from '../../data/episodes';
+import React, { useState } from 'react';
+import { Modal, TitleCardList } from '@components/';
+import FakeEpisodeList from '@data/episodes';
 
 export default function Episode() {
+  const [open, setOpen] = useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <Modal isOpen={true}>
-      <TitleCardList episodes={FakeEpisodeList} />
-    </Modal>
+    <>
+      <button onClick={() => setOpen(true)}>Click Me</button>
+      <Modal isOpen={open} handleClose={handleClose}>
+        <TitleCardList episodes={FakeEpisodeList} />
+      </Modal>
+    </>
   );
 }

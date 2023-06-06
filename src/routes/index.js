@@ -1,5 +1,5 @@
 import React from 'react';
-import { Landing, Login } from '@pages';
+import { Landing, Login, Episode } from '@pages';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function AppRoute() {
@@ -7,13 +7,11 @@ export default function AppRoute() {
 
   return (
     <Router>
-      {!user ? (
-        <Login />
-      ) : (
-        <Routes>
-          <Route path="/" element={<Landing />} />
-        </Routes>
-      )}
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Landing />} />
+        <Route path="/modal" element={<Episode />} />
+      </Routes>
     </Router>
   );
 }

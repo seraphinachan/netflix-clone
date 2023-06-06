@@ -1,5 +1,6 @@
 import React from 'react';
 import './TitleCard.css';
+import PropTypes from 'prop-types';
 
 function TitleCard({ episode }) {
   const { image, description, title, index } = episode;
@@ -31,8 +32,8 @@ export const TitleCardList = ({ episodes }) => {
     <div className="titlecard_list_container">
       <div className="header"></div>
       <div className="content">
-        {episodes.map((episode) => (
-          <TitleCard episode={episode} />
+        {episodes.map((episode, index) => (
+          <TitleCard episode={episode} key={index} />
         ))}
       </div>
     </div>
@@ -40,3 +41,11 @@ export const TitleCardList = ({ episodes }) => {
 };
 
 export default TitleCard;
+
+TitleCard.propTypes = {
+  episode: PropTypes.object,
+};
+
+TitleCardList.propTypes = {
+  episodes: PropTypes.arrayOf(JSON),
+};

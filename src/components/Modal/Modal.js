@@ -1,6 +1,7 @@
 import React from 'react';
 import './Modal.css';
 import ReactPortal from '../ReactPortal';
+import PropTypes from 'prop-types';
 
 export default function Modal({ children, isOpen, handleClose }) {
   if (!isOpen) return null;
@@ -12,3 +13,9 @@ export default function Modal({ children, isOpen, handleClose }) {
     </ReactPortal>
   );
 }
+
+Modal.propTypes = {
+  children: PropTypes.node,
+  isOpen: PropTypes.bool,
+  handleClose: PropTypes.func,
+};
