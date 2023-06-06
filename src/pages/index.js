@@ -1,5 +1,6 @@
 import Landing from './Landing/Landing';
-import Login from './Login/Login';
+import Home from './Home/Home';
 import Episode from './Episodes/Episode';
+import SignIn from './SignIn/SignIn';
 
-export { Landing, Login, Episode };
+export { Landing, Home, Episode, SignIn };

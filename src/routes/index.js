@@ -1,16 +1,16 @@
 import React from 'react';
-import { Landing, Login, Episode } from '@pages';
+import { Landing, Home, Episode, SignIn } from '@pages';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function AppRoute() {
-  const user = null;
-
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Landing />} />
-        <Route path="/modal" element={<Episode />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/signup" element={<SignIn />} />
+        <Route path="/signup" element={<SignIn />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/episode" element={<Episode />} />
       </Routes>
     </Router>
   );
