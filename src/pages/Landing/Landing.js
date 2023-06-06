@@ -1,13 +1,14 @@
-import React from "react";
-import "./Landing.css";
-import {Nav, Banner} from "@components";
+import React from 'react';
+import './Landing.css';
+import { Nav, Banner } from '@components';
 
 function Landing() {
-    return (
+  return (
     <div className="Landing">
-        <Nav />
-        <Banner />
-    </div>);
+      <Nav />
+      <Banner />
+    </div>
+  );
 }
 
 export default Landing;
