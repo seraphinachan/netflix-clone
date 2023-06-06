@@ -1,12 +1,11 @@
 import React from 'react';
-import './Home.css';
-import { Nav, Banner } from '@components';
+import { Nav, Featured } from '@components';
 
 function Landing() {
   return (
-    <div className="Landing">
+    <div>
       <Nav />
-      <Banner />
+      <Featured />
     </div>
   );
 }

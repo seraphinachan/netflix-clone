@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
-import './Banner.css';
+import React from 'react';
+import './Featured.css';
+import { truncate } from '@lib/helpers';
+function Featured() {
 
-function Banner() {
-  const [movie, setMovie] = useState([]);
-
-  function truncate(string, n) {
-    return string?.length > n ? string.substr(0, n - 1) + '...' : string;
-  }
+ 
 
   return (
     <header
@@ -44,4 +41,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default Featured;
