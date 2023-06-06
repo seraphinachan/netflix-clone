@@ -6,6 +6,7 @@ function Landing() {
   return (
     <div>
       <NavBar isLoggedIn={true} />
+      <Featured />
     </div>
   );
 }
