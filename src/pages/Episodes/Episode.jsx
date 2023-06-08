@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import { Modal, TitleCardList } from '@components/';
 import FakeEpisodeList from '@data/episodes';
+import React, { useState } from 'react';
 
 export default function Episode() {
   const [open, setOpen] = useState(false);
